@@ -10148,7 +10148,7 @@
                                             <p class="framer-text framer-styles-preset-1w9leyz" data-styles-preset="Jl2Gzt30x" style="--framer-text-alignment:center">Let's connect ASAP.</p>
                                         </div>
                                     </div>
-                                    <form class="framer-1bxm4bw" data-framer-appear-id="1bxm4bw" data-highlight="true" style="opacity:0.001;transform:translateY(150px)">
+                                    <form id="contactForm" class="framer-1bxm4bw" data-framer-appear-id="1bxm4bw" data-highlight="true" style="opacity:0.001;transform:translateY(150px)">
                                         <label class="framer-pdtl6y">
                                             <div class="framer-1s1qft7" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:rgb(136, 136, 136);transform:none" data-framer-component-type="RichTextContainer">
                                                 <p style="--font-selector:SW50ZXItTWVkaXVt;--framer-font-family:&quot;Inter&quot;, &quot;Inter Placeholder&quot;, sans-serif;--framer-font-size:12px;--framer-font-weight:500;--framer-text-color:var(--extracted-r6o4lv, rgb(136, 136, 136))" class="framer-text">Name</p>
@@ -10189,6 +10189,8 @@
                                             </button>
                                         </div>
                                     </form>
+                                
+                                    
                                     <div class="framer-1qo5cgf">
                                         <div class="framer-10utmrd" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-1w3ko1f:var(--token-8427eb71-934e-4995-a2d5-922e85a91299, rgb(153, 153, 153));--extracted-r6o4lv:var(--token-1f8bec93-8299-4b23-835b-81994393e35e, rgb(255, 255, 255));opacity:0;transform:translateY(40px)" data-framer-component-type="RichTextContainer">
                                             <p style="--framer-font-size:14px;--framer-line-height:20px;--framer-text-alignment:center;--framer-text-color:var(--extracted-r6o4lv, var(--token-1f8bec93-8299-4b23-835b-81994393e35e, rgb(255, 255, 255)))" class="framer-text">
@@ -10315,6 +10317,13 @@
             <div class="framer-jOmqn framer-XOqNy framer-F65sH framer-Eh7hE" id="overlay"></div>
             <!--/$-->
         </div>
+        <script>
+            document.getElementById('contactForm').addEventListener('submit', function (event) {
+                event.preventDefault(); // Prevent the default form submission
+                alert('Form submitted successfully!');
+                this.reset(); // Clear all the fields in the form
+            });
+        </script>
         <script>
             ( () => {
                 function u() {
